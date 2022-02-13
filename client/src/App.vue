@@ -2,14 +2,17 @@
   <div class="flex">
     <ul>
       <li v-for="player of terrorists" :key="player">
-        <Player :player="player"/>
+        <Player :player="player" :focused="state.player.steamid === player.steamid"/>
       </li>
     </ul>
 
-
+    <div v-if="state && state.player">
+      <pre>{{state.player}}</pre>
+    </div>
+    
     <ul>
       <li v-for="player of counterTerrorists" :key="player">
-        <Player :player="player"/>
+        <Player :player="player" :focused="state.player.steamid === player.steamid"/>
       </li>
     </ul>
   </div>
@@ -134,9 +137,6 @@ export default {
     terrorists() {
       return this.team('T')
     }
-
-    // isFocusedPlayer = check if steam ID matches
-    // 
   }
 }
 </script>

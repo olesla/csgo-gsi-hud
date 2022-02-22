@@ -7,7 +7,7 @@
     </ul>
 
     <div v-if="state && state.player">
-      <pre>{{state.player}}</pre>
+      <focused-player :player="state.player"/>
     </div>
     
     <ul>
@@ -30,6 +30,7 @@
 
 <script>
 import Player from './components/Player.vue'
+import FocusedPlayer from './components/FocusedPlayer.vue'
 import {CSGOGSI} from 'csgogsi'
 
 const hasOwnProperty = (object, property) => Object.prototype.hasOwnProperty.call(object, property)
@@ -37,7 +38,7 @@ const hasOwnProperty = (object, property) => Object.prototype.hasOwnProperty.cal
 export default {
   name: 'App',
   components: {
-    Player
+    Player, FocusedPlayer
   },
 
   data() {

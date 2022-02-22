@@ -1,0 +1,16 @@
+# BUG # Main weapon glock når dude har para
+# BUG # Freelook goes BRRRRR
+# BUG # SCAR viser ikke våpen-ikon
+
+# CHANGE # Spillere skal ikke bytte plass på skjermen ved halftime
+
+# REQUEST # Lage variabler som heter CT-INVESTED-DOLLAR & T-INVESTED-DOLLAR
+# REQUEST # Lage variabler som heter CT-UTIL-AMOUNT & T-UTIL-AMOUNT (Sum antall util-nades)
+# REQUEST # Lage variabler som heter CT-REMAINING-PLAYERS & T-REMAINING-PLAYERS
+# REQUEST # Vise score på toppen av skjermen
+
+
+
+
+-------------------------------------------------
+Fjern ingame HUD: cl_draw_only_deathnotices 1
